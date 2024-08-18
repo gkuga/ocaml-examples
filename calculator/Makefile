@@ -46,6 +46,7 @@ clean:
 	rm -f *~
 	rm -f lexer.ml
 	rm -f parser.ml parser.mli parser.output
+	rm -f .depend
 
 .depend: $(DEPEND)
 	$(OCAMLDEP) $(INCLUDES) *.mli *.ml > .depend
